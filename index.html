@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="da-DK">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Walk It" content="Vandring">
+    <meta name="Vandreruter" content="Vandring i danmark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WALK IT</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+    <!-- Navigationen over hjemmesiden -->
+    <!-- Her ligger forside billedet (hero img) -->
+    
+   
+
+<Section class="hero">
+<div class="navbar">
+
+    <div class="navcontainer">
+        <a href="index.html">
+        <img src="images/logowi.png" class="logo" alt="Logo walk it"> 
+        </a>
+                <div class="burgmenu"><a href="#">☰</a>
+                    <ul class="dropdown-burg">
+                        <li><a href="#">NYHEDER</a></li>
+                        <li><a href="#">VANDRERUTER</a></li>
+                        <li><a href="#">ARTILKER</a></li>
+                        <li><a href="#">GALLERI</a></li>
+                        <li><a href="#">FORUM</a></li>
+                        <li><a href="#">OM OS</a></li>
+                        <li><a href="#">KONTAKT</a></li>
+                        <li><a href="#">LOG IND</a></li>
+                        <li><a href="#">TILMELD NU</a></li>
+                    </ul>
+                </div>
+    <!-- her er min navigaion med dropdown på artiklerne -->
+        <nav>   
+           
+            <ul class="navven">
+                <li><a href="#">NYHEDER</a></li>
+                <li><a href="#">VANDRERUTER</a></li>
+                <li class="dropdown-art"><a href="#">ARTILKER</a>
+                    <div class="dropdown-indhold-art">
+                      <a href="pages/vandrestoevler.html">Vandrestøvler er et must</a>
+                      <a href="pages/vandringforalle.html">Vandring er for alle</a>
+                      <a href="pages/godtathave.html">Godt at have med på tur</a>    
+                    </div>
+                </li>
+                <li><a href="#">GALLERI</a></li>
+                <li><a href="#">FORUM</a></li>
+                <li><a href="#">OM OS</a></li>
+            </ul>
+            <ul class="navhøj">
+                <li><a href="#">KONTAKT</a></li>
+                <li><a href="#">LOG IND</a></li>
+            </ul>
+            <div class="tilmeld-nu">
+                <li><button class="tilmeld-knap" type="button" onclick="alert ('Tak fordi du tilmeldte dig')">TILMELD NU!
+                    </button>
+                </li>
+            </div>
+            
+        </nav>
+
+    </div>
+
+</div>
+    
+
+    <div>
+       <!-- <img src="/Images/hero-img.jpg" class="hero-img" alt="Hero img"> --> 
+
+        <h1>"Kom ud i livet<br>og nyd den friske luft"</h1>
+    </div>
+</Section>
+
+    <!-- Artikler med billeder lavet i listeform -->
+
+
+    <div class="artikler-baggrund">
+        <div class="artiklercontainer">
+             
+                <li class="row"><a href="pages/vandringforalle.html">
+                    <img src="./images/Vandring-for-alle.jpg" alt="Vandring er for alle">
+                    <div class="arttext">Vandring er for alle</div>
+                </a></li>
+                <li class="row"><a href="pages/godtathave.html">
+                    <img src="./images/Vandreliste-artikkel.jpg" alt="Liste til vandring">
+                    <div class="arttext">Ha' styr på dit grej</div>
+                </a></li>
+                <li class="row"><a href="pages/vandrestoevler.html">
+                    <img src="./images/Vandrestoevlen-artikkel.jpg" alt="Vandrestoevler">
+                    <div class="arttext">Vandrestøvlen til dit behov</div>
+                </a></li>
+            
+        </div>
+    </div>
+
+    <!-- Google map -->
+<section class="map">
+    <h2 class="mapruter">Vandreruter folk har lagt ind</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15085.098460594998!2d9.45507278955271!3d55.803424862695245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b7faf06d320e3%3A0x4755506277926d0d!2sAgervej%208%2C%207300%20Jelling!5e0!3m2!1sda!2sdk!4v1635819594683!5m2!1sda!2sdk" 
+            class="gmap"
+            style="border: 0px;" 
+            allowfullscreen="" 
+            loading="lazy">
+    </iframe>
+    
+    <p class="maptext">Her kan du finde en rute der passer til dit behov</p>
+</section>
+
+<!--Kontakt formular-->
+<section>
+    <div class="kontakt">
+
+        <h2>Tilmeld dig nyhedsbrev</h2>
+
+        <form action="Tak for din bestilling!">
+
+            <label for="Navn">Navn</label>
+            <input type="text" name="Navn" id="Navn">
+
+            <label for="Email">Email</label>
+            <input type="Email" name="Email" id="Email">
+
+            <label for="Tekst"></label>
+            <textarea name="Tekst" id="Tekst" cols="30" rows="10">Dit spørgsmål</textarea>
+
+            <input class="send" type="button" value="Send">
+
+
+        </form>
+
+    </div>
+</section>
+
+
+
+<footer class="footer">
+    <p>Copyright &copy;2021 WALK IT</p>
+
+</footer>  
+
+</body>
+
+
+
+</html>

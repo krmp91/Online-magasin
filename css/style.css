@@ -1,0 +1,1090 @@
+/* Reset: Meyer Style */
+/* fjerner default browser styles */
+@import 'reset.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Rubik', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+  
+body {
+    background: #D3D8D3; 
+    width: 100%;
+}
+
+
+/* Menu med hero img */
+.hero {
+   
+    background-image: url("C:/Users/krmp_/Documents/Kode mappen/Online magasin/images/heroimg.jpg");
+    background-size: cover;
+    height: 1100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+} 
+
+.burgmenu {
+    display: none;
+}
+.logo {
+    height: 100px;
+}
+
+/* navigationsbar (header) */
+.navbar {
+    background: rgba(194, 217, 214, 0.664);
+    padding: 3px;
+    border: 0.5px rgba(0, 0, 0, 0.30) solid;
+
+}
+
+.navcontainer {
+    display: grid;
+    grid-template-columns: 180px auto 180px;
+    position: relative;
+    
+}
+
+.navcontainer nav {
+     
+    display: flex;
+    width: 100%;
+    background: none;     
+}
+
+.navcontainer a {
+    margin-left: 1em;
+    text-decoration: none;
+    color: rgb(36, 41, 33);  
+}
+
+.navcontainer a:hover {
+    color: rgb(212, 255, 133);
+    text-shadow: 0 0 1px #3B4A21, 0 0 1px #3B4A21; 
+}
+.navbar li {
+    display: inline; 
+}
+
+.navven {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.7em;
+    
+}
+
+
+.navven a {
+    padding: 1em;
+    font-size: 24px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+
+.navhøj {
+    position: absolute;
+    right: 2em;
+}
+
+.navhøj a {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    display: inline;  
+    right: 10rem;
+    bottom: 5rem;
+    font-size: 14px;
+    
+}
+
+/* telmeld bottun */
+.tilmeld-nu {
+    position: absolute;
+    top: 1.7em;
+    right: 2em;
+    bottom: 1em;   
+}
+
+.tilmeld-knap {
+    border-radius: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 17px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    color: rgb(36, 41, 33);
+    text-shadow: 0 0 1px #000000, 0 0 1px #000000; 
+    background: #c5e6ee
+}
+
+.tilmeld-nu:hover {
+        top: 1.8em;
+        right: 3em;
+        bottom: 2em;
+}
+
+.tilmeld-knap:hover {
+    background-color: rgb(212, 255, 133);
+    padding-right: 22px;
+    padding-left: 22px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    cursor: pointer;
+}
+/* telmeld button slut */
+
+
+
+
+/* drop down for artikler */
+.dropdown-art {
+    display: block;
+    
+}   
+
+.dropdown-art:hover {
+    color: rgb(212, 255, 133);
+    cursor: pointer;
+}
+
+.dropdown-art, .navven {
+    list-style: none;
+    font-size: 19px;
+    color: rgb(212, 255, 133);
+    justify-content: space-evenly;
+}
+
+.dropdown-indhold-art {
+    display: none;
+    position: absolute;
+    color: rgb(212, 255, 133);
+}
+
+.dropdown-indhold-art a {
+    display: block;
+    background-color: rgba( 194, 217, 214, 0.9);
+}
+
+.dropdown-indhold-art a:hover {
+    background-color: #3fc577;
+    
+}
+
+.dropdown-art:hover .dropdown-indhold-art {
+    display: block
+}
+/* drop down for artikler slut */
+
+/* navigatonsbar slutter her */
+
+/* hero img text */
+.hero h1 {
+    font-size: 70px;
+    margin: 5em;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    color: rgb(245, 247, 242);
+    text-shadow: 5px 5px 20px #3e4b2583, 50px 5px 20px #3e4b2583;
+    
+}
+
+
+
+/* sectionen med artikler */
+.artikler-baggrund {
+    background: #D3D8D3; 
+    background: -moz-linear-gradient(top, #D3D8D3 0%, #cce0cc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D3D8D3), color-stop(100%,#cce0cc));
+    background: -webkit-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+    background: -o-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+    background: -ms-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+    background: linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+    
+ 
+}
+
+
+.artiklercontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    height: 1500px;
+    width: 100%;
+    justify-content: space-around;
+    list-style-type: none; 
+    
+    
+}
+
+.row {
+    flex-basis: 33.3%;
+    min-width: 400px;
+}
+
+.artiklercontainer a {
+    color: rgb(255, 255, 255);
+    
+    text-decoration: none;
+}
+
+
+.artiklercontainer img {
+    margin-top: 10em;
+    padding: 0;
+    max-width: 70%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 0.5px rgba(0, 0, 0, 0.35) solid;
+}
+
+
+ .arttext {
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    text-shadow: 0 0 9px black;
+    font-size: 30px;
+}
+
+
+img:hover {
+    -webkit-box-shadow: 0px 0px 50px 0px rgb(37, 51, 35);
+    -moz-box-shadow: 0px 0px 50px 0px rgb(37, 51, 35);
+    box-shadow: 0px 0px 50px 0px rgb(37, 51, 35);
+    }
+
+
+/* google map section */
+.map {
+    height: 700px;
+    text-align: center;
+    margin-bottom: 4em;
+    background: #cce0cc; 
+    background: -moz-linear-gradient(top, #cce0cc 0%, #D3D8D3 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cce0cc), color-stop(100%,#D3D8D3));
+    background: -webkit-linear-gradient(top, #cce0cc 0%,#D3D8D3 100%);
+    background: -o-linear-gradient(top, #cce0cc 0%,#D3D8D3 100%);
+    background: -ms-linear-gradient(top, #cce0cc 0%,#D3D8D3 100%);
+    background: linear-gradient(top, #cce0cc 0%,#D3D8D3 100%);
+}
+.mapruter {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+.gmap {
+    width: 600px;
+    height: 450px;
+}
+.maptext {
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-shadow: 0 0 2px black;
+}
+
+/* kontakt formularen */
+.kontakt {
+    display: block;
+    background: #D3D8D3; 
+    background: -moz-linear-gradient(top, #D3D8D3 0%, #cce0cc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D3D8D3), color-stop(100%,#cce0cc));
+    background: -webkit-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+    background: -o-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+    background: -ms-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+    background: linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px black;
+    height: 800px;
+    
+
+}
+
+h2 {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1.5em;
+}
+
+label {
+    position: relative;
+    align-items: center;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+    
+}
+
+input, textarea {
+    position: relative;
+    align-items: center;
+    font-size: 20px;
+    width: 70%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid gray;
+    text-align: center;
+    
+
+}
+
+.send {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 5em;
+    cursor: pointer;
+    margin-top:0em;
+    
+    
+    
+}
+
+/* Footer sectionen */
+
+.footer {
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    background-color: #314b3fbe;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.footer p {
+    text-align: center;
+    margin: 2.7em;
+}
+
+
+@media only screen and (max-width: 768px) { 
+ 
+    .navven {
+        display: none;
+    }
+    .navhøj {
+        display: none;
+    }
+    .tilmeld-nu {
+        display: none;
+    } 
+    .tilmeld-knap {
+        display: none;
+    }
+    .hero {
+        height: 300px;
+    }
+    nav {
+        display: none;
+    }
+    .navcontainer {
+        display: flex;     
+    }
+    
+    .hero h1 {
+    font-size: 16px;
+    margin: 1.7em;
+    }
+
+
+    .burgmenu {
+        display: block;
+        position: absolute;
+        right: 0px;
+        margin-right: 13px;
+        margin-top: -3px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 600;
+    
+    }   
+ 
+    .logo {
+        
+        height: 45px; 
+    }
+
+    .burgmenu:hover {
+        display: block;
+        color: rgb(212, 255, 133);
+        cursor: pointer;
+        text-align: right;
+        right: 0px;
+        margin-right: 13px;
+        margin-top: -3px;
+        
+    }
+    
+    .burgmenu, .dropdown-burg {
+        list-style: none;
+        font-size: 35px;
+        
+        color: rgb(212, 255, 133);
+        
+    }
+    
+    .burgmenu ul {
+        padding: 3px;
+        font-size: 20px;
+        
+    }
+
+    .dropdown-burg {
+        display: none;
+        width: 100%;
+        color: rgb(212, 255, 133);
+    }
+    
+    .dropdown-burg a {
+        display: block;
+        
+        background-color: rgba( 194, 217, 214, 0.9);
+    }
+    
+    .dropdown-burg a:hover {
+
+        background-color: #3fc577;
+        
+    }
+    
+    .burgmenu:hover .dropdown-burg {
+        display: block;
+    }
+
+   
+    .arttext {
+        font-size: 16px;
+    }
+
+   
+    .mapruter {
+        padding-top: 3em;
+        font-size: 18px;
+    }
+   
+    .gmap {
+        width: 80%;
+        height: 80%;
+    } 
+    .maptext {
+        font-size: 16px;
+       
+    }
+    
+}
+
+
+@media only screen and (min-width: 768px) {
+
+     .hero {
+        height: 550px;
+    }
+    
+    .burgmenu {
+        display: none;
+    }
+    .logo {
+        height: 50px;
+    }
+   
+    /* navigationsbar (header) */
+    .navcontainer {
+        display: grid;
+        grid-template-columns: 90px auto 90px;
+        
+    }
+    
+    
+    .navcontainer a {
+        margin-left: 0.6em;
+    }
+    
+    
+    .navven {
+        margin-top: 0.85em;
+        
+    }
+    
+    
+    .navven a {
+        padding: .5em;
+        font-size: 12px;
+    }
+    
+    .navhøj {
+        
+        right: 1em;
+    }
+    
+    .navhøj a {
+        right: 2rem;
+        bottom: 2.5rem;
+        font-size: 7px;
+        
+    }
+    
+    /* telmeld bottun */
+    .tilmeld-nu {
+        top: 1em;
+        right: 1em;
+        bottom: .3em;   
+    }
+    
+    .tilmeld-knap {
+        border-radius: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 8.5px;
+    }
+    
+    .tilmeld-nu:hover {
+            top: .9em;
+            right: 1.5em;
+            bottom: 1em;
+    }
+    
+    .tilmeld-knap:hover {
+        padding-right: 11px;
+        padding-left: 11px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+    /* telmeld button slut */
+    
+    
+    
+    
+    /* drop down for artikler */
+    .dropdown-art {
+        display: block;
+        
+    }   
+    
+    
+    .dropdown-art, .navven {
+        font-size: 19px;
+    }
+    
+    /* drop down for artikler slut */
+    
+    /* navigatonsbar slutter her */
+    
+    /* hero img text */
+    .hero h1 {
+        font-size: 35px;
+        margin: 2.5em;
+    }
+
+    .artiklercontainer {
+
+        
+        width: 100%;
+        list-style-type: none;    
+    }
+    
+    
+    
+    .artiklercontainer img {
+        margin-top: 10em;
+        padding: 0;
+        width: 70%;
+        
+    }
+    
+    
+     .arttext {
+        font-size: 18px;
+    }
+    
+    
+    
+    /* google map section */
+    .map {
+        height: 700px;
+        margin-bottom: 4em; 
+    }
+    .mapruter {
+        font-size: 28px;
+    
+    }
+    .maptext {
+        padding: 7px;
+        font-size: 20px;
+
+    }
+    
+    /* kontakt formularen */
+    .kontakt {
+
+        height: 800px;
+        
+    
+    }
+    
+    h2 {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 1.5em;
+    }
+    
+    label {
+        position: relative;
+        align-items: center;
+        display: block;
+        font-size: 1.2em;
+        margin-bottom: .5em;
+        
+    }
+    
+    input, textarea {
+        font-size: 20px;
+        width: 70%;
+        padding: .8em;
+        margin-bottom: 1em;
+        border-radius: .3em;
+        border: 1px solid gray;
+        text-align: center;
+        
+    
+    }
+    
+    .send {
+        font-size: 1.3em;
+        border-radius: 5em;
+        margin-top:0em;
+                
+    }
+    
+    /* Footer sectionen */
+    
+    .footer {
+        position: absolute;
+        height: 150px;
+        width: 100%;
+        background-color: #314b3fbe;
+        font-size: 1.5em;
+    }
+    
+    .footer p {
+        text-align: center;
+        margin: 2.7em;
+    }
+}
+
+@media only screen and (min-width: 1520px) {
+    
+    .hero {
+   
+        background-image: url("C:/Users/krmp_/Documents/Kode mappen/Online magasin/images/heroimg.jpg");
+        background-size: cover;
+        height: 1100px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    } 
+    
+    .burgmenu {
+        display: none;
+    }
+    .logo {
+        height: 100px;
+    }
+    
+    /* navigationsbar (header) */
+    .navbar {
+        background: rgba(194, 217, 214, 0.664);
+        padding: 3px;
+        border: 0.5px rgba(0, 0, 0, 0.30) solid;
+    
+    }
+    
+    .navcontainer {
+        display: grid;
+        grid-template-columns: 180px auto 180px;
+        position: relative;
+        
+    }
+    
+    .navcontainer nav {
+         
+        display: flex;
+        width: 100%;
+        background: none;     
+    }
+    
+    .navcontainer a {
+        margin-left: 1em;
+        text-decoration: none;
+        color: rgb(36, 41, 33);  
+    }
+    
+    .navcontainer a:hover {
+        color: rgb(212, 255, 133);
+        text-shadow: 0 0 1px #3B4A21, 0 0 1px #3B4A21; 
+    }
+    .navbar li {
+        display: inline; 
+    }
+    
+    .navven {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1.7em;
+        
+    }
+    
+    
+    .navven a {
+        padding: 1em;
+        font-size: 24px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 600;
+    }
+    
+    .navhøj {
+        position: absolute;
+        right: 2em;
+    }
+    
+    .navhøj a {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 600;
+        display: inline;  
+        right: 10rem;
+        bottom: 5rem;
+        font-size: 14px;
+        
+    }
+    
+    /* telmeld bottun */
+    .tilmeld-nu {
+        position: absolute;
+        top: 1.7em;
+        right: 2em;
+        bottom: 1em;   
+    }
+    
+    .tilmeld-knap {
+        border-radius: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 17px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 600;
+        color: rgb(36, 41, 33);
+        text-shadow: 0 0 1px #000000, 0 0 1px #000000; 
+        background: #c5e6ee
+    }
+    
+    .tilmeld-nu:hover {
+            top: 1.8em;
+            right: 3em;
+            bottom: 2em;
+    }
+    
+    .tilmeld-knap:hover {
+        background-color: rgb(212, 255, 133);
+        padding-right: 22px;
+        padding-left: 22px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        cursor: pointer;
+    }
+    /* telmeld button slut */
+    
+    
+    
+    
+    /* drop down for artikler */
+    .dropdown-art {
+        display: block;
+        
+    }   
+    
+    .dropdown-art:hover {
+        color: rgb(212, 255, 133);
+        cursor: pointer;
+    }
+    
+    .dropdown-art, .navven {
+        list-style: none;
+        font-size: 19px;
+        color: rgb(212, 255, 133);
+        justify-content: space-evenly;
+    }
+    
+    .dropdown-indhold-art {
+        display: none;
+        position: absolute;
+        color: rgb(212, 255, 133);
+    }
+    
+    .dropdown-indhold-art a {
+        display: block;
+        background-color: rgba( 194, 217, 214, 0.9);
+    }
+    
+    .dropdown-indhold-art a:hover {
+        background-color: #3fc577;
+        
+    }
+    
+    .dropdown-art:hover .dropdown-indhold-art {
+        display: block
+    }
+    /* drop down for artikler slut */
+    
+    /* navigatonsbar slutter her */
+    
+    /* hero img text */
+    .hero h1 {
+        font-size: 70px;
+        margin: 5em;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 900;
+        font-style: italic;
+        text-align: center;
+        color: rgb(245, 247, 242);
+        text-shadow: 5px 5px 20px #3e4b2583, 50px 5px 20px #3e4b2583;
+        
+    }
+    
+    
+    
+    /* sectionen med artikler */
+    .artikler-baggrund {
+        background: #D3D8D3; 
+        background: -moz-linear-gradient(top, #D3D8D3 0%, #cce0cc 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D3D8D3), color-stop(100%,#cce0cc));
+        background: -webkit-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+        background: -o-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+        background: -ms-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+        background: linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+        
+     
+    }
+    
+    
+    .artiklercontainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        height: 1500px;
+        width: 100%;
+        justify-content: space-around;
+        list-style-type: none; 
+        
+        
+    }
+    
+    .row {
+        flex-basis: 33.3%;
+        min-width: 400px;
+    }
+    
+    .artiklercontainer a {
+        color: rgb(255, 255, 255);
+        
+        text-decoration: none;
+    }
+    
+    
+    .artiklercontainer img {
+        margin-top: 10em;
+        padding: 0;
+        max-width: 70%;
+        height: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: 0.5px rgba(0, 0, 0, 0.35) solid;
+    }
+    
+    
+     .arttext {
+        justify-content: space-evenly;
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        text-shadow: 0 0 9px black;
+        font-size: 30px;
+    }
+    
+    
+    img:hover {
+        -webkit-box-shadow: 0px 0px 50px 0px rgb(37, 51, 35);
+        -moz-box-shadow: 0px 0px 50px 0px rgb(37, 51, 35);
+        box-shadow: 0px 0px 50px 0px rgb(37, 51, 35);
+        }
+    
+    
+    /* google map section */
+    .map {
+        height: 700px;
+        text-align: center;
+        margin-bottom: 4em;
+        background: #cce0cc; 
+        background: -moz-linear-gradient(top, #cce0cc 0%, #D3D8D3 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cce0cc), color-stop(100%,#D3D8D3));
+        background: -webkit-linear-gradient(top, #cce0cc 0%,#D3D8D3 100%);
+        background: -o-linear-gradient(top, #cce0cc 0%,#D3D8D3 100%);
+        background: -ms-linear-gradient(top, #cce0cc 0%,#D3D8D3 100%);
+        background: linear-gradient(top, #cce0cc 0%,#D3D8D3 100%);
+    }
+    .mapruter {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+    }
+    .gmap {
+        width: 600px;
+        height: 450px;
+    }
+    .maptext {
+        padding: 10px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        text-shadow: 0 0 2px black;
+    }
+    
+    /* kontakt formularen */
+    .kontakt {
+        background: #D3D8D3; 
+        background: -moz-linear-gradient(top, #D3D8D3 0%, #cce0cc 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D3D8D3), color-stop(100%,#cce0cc));
+        background: -webkit-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+        background: -o-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+        background: -ms-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+        background: linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 2px black;
+        height: 800px;
+        
+    
+    }
+    
+    h2 {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 1.5em;
+    }
+    
+    label {
+        position: relative;
+        align-items: center;
+        font-size: 1.2em;
+        margin-bottom: .5em;
+        
+    }
+    
+    input, textarea {
+        position: relative;
+        align-items: center;
+        font-size: 20px;
+        width: 70%;
+        padding: .8em;
+        margin-bottom: 1em;
+        border-radius: .3em;
+        border: 1px solid gray;
+        text-align: center;
+        
+    
+    }
+    
+    .send {
+        font-weight: bold;
+        font-size: 1.3em;
+        border-radius: 5em;
+        cursor: pointer;
+        margin-top:0em;
+        
+        
+        
+    }
+    
+    /* Footer sectionen */
+    
+    .footer {
+        position: absolute;
+        height: 150px;
+        width: 100%;
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+    
+    .footer p {
+        text-align: center;
+        margin: 2.7em;
+    }
+}
+
+/* --CSS til undersider -- */
+
+.hero2 {
+    background-size: cover;
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.article {
+    background: #D3D8D3; 
+    background: -moz-linear-gradient(top, #D3D8D3 0%, #cce0cc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D3D8D3), color-stop(100%,#cce0cc));
+    background: -webkit-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+    background: -o-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+    background: -ms-linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+    background: linear-gradient(top, #D3D8D3 0%,#cce0cc 100%);
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.articlecontent {
+    font-family:'Rubik', sans-serif;
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.articlecontent h2 {
+    margin: 20px;
+    line-height: 60px;
+}
+.articlecontent img {
+    max-width: 70%;
+}
+h1 {
+    font-family:'Rubik', sans-serif;
+    text-align: center;
+    font-size: 40px;
+
+}
+
